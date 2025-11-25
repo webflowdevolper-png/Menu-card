@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shivalik Café - Menu</title>
+  <style>
+    :root{ --bg:#f6f7f9; --card:#ffffff; --accent:#d9534f; --muted:#6b6b6b; --border:#e6e7ea; }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#222; margin:0; padding:32px}
+    .wrap{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px;background:#ffffff;border:1px solid var(--border);padding:20px 24px;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,0.06);}
+    .brand{background:transparent;border:none;padding:0;box-shadow:none;flex:1}
+    .brand h1{margin:0;font-size:20px}
+    .brand p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .contacts{min-width:220px;text-align:right}
+    .contacts small{display:block;color:var(--muted)}
+
+    .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    @media (max-width:760px){.menu-grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border:1px solid var(--border);padding:16px;border-radius:10px}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:16px}
+    .section-title .desc{color:var(--muted);font-size:13px}
+
+    ul.items{list-style:none;padding:0;margin:0}
+    li.item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed rgba(0,0,0,0.04)}
+    li.item:last-child{border-bottom:none}
+    .item .name{font-size:15px}
+    .item .price{font-weight:600}
+
+    /* special full-width card for address/details */
+    .full{grid-column:1/-1}
+
+    .note{font-size:13px;color:var(--muted);margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Shivalik Café</h1>
+        <p>Near Hitachi Atm, Shivalik Nagar Sec3, Jharmajri Baddi</p>
+      </div>
+      <div class="contacts">
+        <small>Mob No:</small>
+        <div style="font-weight:700">9418412218, 9805035072</div>
+      </div>
+    </header>
+
+    <div class="menu-grid">
+
+      <div class="card">
+        <div class="section-title"><h2>Breakfast</h2><span class="desc">Pratha & Eggs</span></div>
+        <ul class="items">
+          <li class="item"><span class="name">Pratha aalu</span><span class="price">30</span></li>
+          <li class="item"><span class="name">Prantha Mix</span><span class="price">40</span></li>
+          <li class="item"><span class="name">Paneer Pratha</span><span class="price">60</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Sizzlers Chinese Veg</h2><span class="desc">Starters & Soups</span></div>
+        <ul class="items">
+          <li class="item"><span class="name">Paneer Chilli</span><span class="price">160</span></li>
+          <li class="item"><span class="name">Veg Manchurian</span><span class="price">130</span></li>
+          <li class="item"><span class="name">Chilli Patato</span><span class="price">130</span></li>
+          <li class="item"><span class="name">Veg Spring Roll</span><span class="price">60</span></li>
+          <li class="item"><span class="name">Mushroom chilli</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Veg Noodle</span><span class="price">50</span></li>
+          <li class="item"><span class="name">Veg Soup</span><span class="price">50</span></li>
+          <li class="item"><span class="name">Veg Manchow Soup</span><span class="price">60</span></li>
+          <li class="item"><span class="name">Veg Thupka</span><span class="price">50</span></li>
+          <li class="item"><span class="name">Tomato soup</span><span class="price">60</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Rice & Noodles Veg</h2><span class="desc">Fried Rice & Specials</span></div>
+        <ul class="items">
+          <li class="item"><span class="name">Veg  fried Rice</span><span class="price">140</span></li>
+          <li class="item"><span class="name">Veg chopsey</span><span class="price">130</span></li>
+          <li class="item"><span class="name">Veg Schezwan fried rice</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Paneer Fried rice</span><span class="price">170</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Main Couse Veg</h2><span class="desc">Curries & Sides</span></div>
+        <ul class="items">
+          <li class="item"><span class="name">Paneer Lababdaar</span><span class="price">140-230</span></li>
+          <li class="item"><span class="name">Paneer Butter Masala</span><span class="price">130-220</span></li>
+          <li class="item"><span class="name">kadai Paneer</span><span class="price">130-200</span></li>
+          <li class="item"><span class="name">Mix Veg</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Shahi Paneer</span><span class="price">140-260</span></li>
+          <li class="item"><span class="name">Mutter Paeer</span><span class="price">180</span></li>
+          <li class="item"><span class="name">Veg Kofta</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Aloo Gobhi</span><span class="price">140</span></li>
+          <li class="item"><span class="name">Jeera Aaloo</span><span class="price">100</span></li>
+          <li class="item"><span class="name">Mushroom Mashala</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Mushroom Muttor</span><span class="price">160</span></li>
+          <li class="item"><span class="name">Allo Muttor</span><span class="price">130</span></li>
+          <li class="item"><span class="name">Dal Makhani</span><span class="price">110-150</span></li>
+          <li class="item"><span class="name">Palak Paneer</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Paneer Bhurji</span><span class="price">270</span></li>
+          <li class="item"><span class="name">Yellow Dall</span><span class="price">100-150</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Rice Veg</h2></div>
+        <ul class="items">
+          <li class="item"><span class="name">Steam Rice</span><span class="price">90</span></li>
+          <li class="item"><span class="name">Jeera Rice</span><span class="price">100</span></li>
+          <li class="item"><span class="name">Veg Pulao</span><span class="price">130</span></li>
+          <li class="item"><span class="name">Veg Biryani</span><span class="price">140</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Breakfast</h2><span class="desc">Eggs & More</span></div>
+        <ul class="items">
+          <li class="item"><span class="name">Egg Partha</span><span class="price">60</span></li>
+          <li class="item"><span class="name">Bread Omelete</span><span class="price">50</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Veg Taali</h2><span class="desc">Thali Options</span></div>
+        <ul class="items">
+          <li class="item"><span class="name">Veg Taali (4 roti, Daal, sabji,Rayta, Ricel)</span><span class="price">100</span></li>
+          <li class="item"><span class="name">Spicel Thali (4  Butter roti, Daal Makhni,Kadai paneer, sabji,Rayta, jeera rice)</span><span class="price">160</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Rice Noododle Non veg</h2></div>
+        <ul class="items">
+          <li class="item"><span class="name">Egg fried rice</span><span class="price">130</span></li>
+          <li class="item"><span class="name">Chicken fried rice</span><span class="price">180</span></li>
+          <li class="item"><span class="name">Chicken Schezwan fried rice</span><span class="price">220</span></li>
+          <li class="item"><span class="name">Chicken soup</span><span class="price">80</span></li>
+          <li class="item"><span class="name">Chicken Mancho Soup</span><span class="price">90</span></li>
+          <li class="item"><span class="name">Chicken Spring Roll</span><span class="price">120</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2>Main Course Non Veg</h2></div>
+        <ul class="items">
+          <li class="item"><span class="name">Butter Chicken Mashala</span><span class="price">200-390</span></li>
+          <li class="item"><span class="name">Chicken Masala</span><span class="price">180-380</span></li>
+          <li class="item"><span class="name">Rada Chicken</span><span class="price">200-390</span></li>
+          <li class="item"><span class="name">Chicken Curry</span><span class="price">170-280</span></li>
+          <li class="item"><span class="name">Egg Curry</span><span class="price">150</span></li>
+          <li class="item"><span class="name">Chicken Do Pyaaza</span><span class="price">180-390</span></li>
+          <li class="item"><span class="name">Kadhi Chicken</span><span class="price"></span></li>
+          <li class="item"><span class="name">Chicken Baryani</span><span class="price">180</span></li>
+          <li class="item"><span class="name">Veg Raita</span><span class="price">50</span></li>
+          <li class="item"><span class="name">Boodi Raita</span><span class="price">60</span></li>
+          <li class="item"><span class="name">Green Salad</span><span class="price">50</span></li>
+          <li class="item"><span class="name">Chilli Chicken</span><span class="price">200-360</span></li>
+          <li class="item"><span class="name">Fry Chicken</span><span class="price">180-350</span></li>
+          <li class="item"><span class="name">Chicken Pakoda</span><span class="price"></span></li>
+        </ul>
+      </div>
+
+      <div class="card full">
+        <div class="section-title"><h2>Non veg thali</h2></div>
+        <ul class="items">
+          <li class="item"><span class="name">230 (chicken ,jeera Rice,4 butter Roti,Raiyta Salad)</span><span class="price">230</span></li>
+        </ul>
+        <p class="note">If you need this file in a different format or want slight layout changes, tell me — I can adjust colors, fonts, or export to PDF/print layout.</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
